@@ -1,0 +1,124 @@
+$border: #93A8AC;
+$main_bg: #4C5760;
+$main_fg: #D7CEB2;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  color: #D7CEB2;
+  background-color: $border;
+  font-family: 'Orienta', sans-serif;
+}
+#wrapper {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: $main_bg;
+}
+
+h1.header {
+  font-size: 5rem;
+}
+
+.bubbs-content {
+  padding: 5rem 0;
+  height: 100%;
+}
+
+.input-group {
+  margin: 5rem 0;
+}
+
+
+.button {
+	float: left;
+  cursor: pointer;
+  width:100%;
+	display: block;
+	padding: 2rem 4rem;
+	border: none;
+	background: none;
+	color: inherit;
+	vertical-align: middle;
+	position: relative;
+	z-index: 1;
+	-webkit-backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+  transition: transform 0.5s;
+}
+.button:focus {
+	outline: none;
+}
+.button:active {
+  transform: scale(0.96);
+}
+.button > span {
+	vertical-align: middle;
+  font-size: 3rem;
+}
+.button.button--shikoba {
+	overflow: hidden;
+	background: $main_fg;
+	color: $main_bg;
+	border-color: $main_bg;
+	-webkit-transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+	transition: background-color 0.3s, border-color 0.3s, color 0.3s, transform 0.1s;
+}
+.button--shikoba > span {
+	display: inline-block;
+	-webkit-transform: translate3d(-3rem, 0, 0);
+	transform: translate3d(-3rem, 0, 0);
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+	-webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+	transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+.button--shikoba .button__icon {
+	position: absolute;
+	left: 20px;
+	font-size: 3rem;
+	-webkit-transform: translate3d(-4rem, 2.5em, 0);
+	transform: translate3d(-4rem, 2.5em, 0);
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+	-webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+	transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+.button--shikoba:hover .button__icon,
+.button--shikoba:hover > span {
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+.button--shikoba:hover > span {
+  transform: translate3d(2rem, 0, 0);
+}
+.button--shikoba:hover {
+	background: $border;
+	border-color: $border;
+	color: #fff;
+}
+
+textarea#generated {
+    padding: 25px;
+    font-size: 2rem;
+  height: 100%;
+  background-color: $border;
+  color: white;
+}
+
+.form-control {
+  background-color: $border;
+  border-color: $border;
+  color: white;
+  font-size: 5rem;
+  padding: 4rem 0;
+  transition: transform 0.2s;
+
+  &:focus {
+    background-color: $border;
+    color: white;
+    transform: scale(1.16);
+  }
+}
