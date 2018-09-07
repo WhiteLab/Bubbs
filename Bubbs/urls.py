@@ -22,3 +22,4 @@ urlpatterns = [
     path(urljoin(settings.RELATIVE_URL_PREFIX, 'admin/'), admin.site.urls),
     path(urljoin(settings.RELATIVE_URL_PREFIX), include('bubbs.urls'))
 ]
+# Adding some comments because git is being weird
